@@ -1,0 +1,2080 @@
+{
+  "meta": {
+    "universo": "PANGEA 2030",
+    "version": "0.5.0",
+    "fecha": "2026-07-05",
+    "estado": "libertad decretada",
+    "temporada": "temporada-00-big-bang",
+    "fuente": "pangea 2030.docx",
+    "descripcion": "Emision Genesis reconstruida exclusivamente desde el DOCX fuente: Junta de Gobernacion Mundial, Agenda 2030, Documento #008, PARALELO, PANGEA, METAS, PROS, PARIAS y aceptacion pacifica."
+  },
+  "mapa": {
+    "titulo": "Mapa del PARALELO",
+    "texto": "La linea no divide paises. Divide acceso, memoria, tecnologia y destino.",
+    "imagen": "paralelo.jpg"
+  },
+  "items": [
+    {
+      "id": "pangea-genesis-0001",
+      "tipo": "GENESIS",
+      "titulo": "Ingobernabilidad",
+      "texto": "Después de muchos altibajos políticos que nos condujeron prácticamente a la ingobernabilidad, ganó las elecciones una coalición bastante sorprendente de los principales partidos políticos repartiéndose la burocracia y la responsabilidad.",
+      "etiquetas": [
+        "genesis"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0002",
+      "tipo": "GENESIS",
+      "titulo": "Coalición",
+      "texto": "Muchos pensábamos que quizás fuera el momento de una gran coalición nacional.",
+      "etiquetas": [
+        "genesis"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0003",
+      "tipo": "GENESIS",
+      "titulo": "Que más adelante",
+      "texto": "Que más adelante ya saldrían otras necesidades pero que mientras tanto, garantizar cierta estabilidad proporcionaría a los ciudadanos un marco donde progresar.",
+      "etiquetas": [
+        "genesis"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0004",
+      "tipo": "GENESIS",
+      "titulo": "META",
+      "texto": "Además, la Meta estaba tomando gran protagonismo así que gobernar, gobernar, había poco que gobernar.",
+      "etiquetas": [
+        "meta"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0005",
+      "tipo": "GENESIS",
+      "titulo": "Más bien los",
+      "texto": "Más bien los retos estaban en otros ámbitos, principalmente dirigidos al “mercado” digital.",
+      "etiquetas": [
+        "digital"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0006",
+      "tipo": "GENESIS",
+      "titulo": "Como la tecnología",
+      "texto": "Como la tecnología lo permitía, cada vez las elecciones se celebraban con mayor asiduidad.",
+      "etiquetas": [
+        "tecnologia"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0007",
+      "tipo": "GENESIS",
+      "titulo": "Firma digital",
+      "texto": "Con la firma digital ya no eran necesarios los desplazamientos y un político polaco, uno guineano o canadiense, con la traducción simultánea gestionado por inteligencia artificial, podía perfectamente estar haciendo campaña para que tu voto se decantase de manera local.",
+      "etiquetas": [
+        "digital"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0008",
+      "tipo": "GENESIS",
+      "titulo": "Agenda 2030",
+      "texto": "Supongo que habrás escuchado algo sobre la agenda 2030, pero es que, en 2029, poder votar a un partido representado desde cualquier parte del mundo se hizo habitual, así que por primera vez se planteó un gobierno democrático mundial.",
+      "etiquetas": [
+        "agenda-2030",
+        "gobierno"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0009",
+      "tipo": "GENESIS",
+      "titulo": "En el sentir",
+      "texto": "En el sentir de muchas personas pareció calar el mensaje de que, si los intereses de los que nos representasen fueran globales, quizás, y sólo quizás, desaparecerían muchas de las controversias más importantes dando para a la tan ansiada estabilidad.",
+      "etiquetas": [
+        "genesis"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0010",
+      "tipo": "GENESIS",
+      "titulo": "No creas que",
+      "texto": "No creas que éramos ajenos a los posibles problemas que esto podía ocasionar, pero puesto en una balanza era como apostar por un mal menor.",
+      "etiquetas": [
+        "genesis"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0011",
+      "tipo": "GENESIS",
+      "titulo": "Algo nuevo concreto",
+      "texto": "Algo nuevo, concreto e ilusionante.",
+      "etiquetas": [
+        "genesis"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0012",
+      "tipo": "GENESIS",
+      "titulo": "Todo el poder",
+      "texto": "Todo el poder de todo para todos, mediante una representación global.",
+      "etiquetas": [
+        "genesis"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0013",
+      "tipo": "GENESIS",
+      "titulo": "Si había unas",
+      "texto": "Si había unas elecciones mundiales y se presentaban dos opciones, la que ganase por la mitad más uno representaría a más de la mitad de la población mundial.",
+      "etiquetas": [
+        "genesis"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0014",
+      "tipo": "GENESIS",
+      "titulo": "Eso colocando a",
+      "texto": "Eso, colocando a tanta gente con la sensación de pertenencia al mismo bando merecía una oportunidad.",
+      "etiquetas": [
+        "genesis"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0015",
+      "tipo": "GENESIS",
+      "titulo": "El caso es",
+      "texto": "El caso es que no ganó una opción por un cincuenta y uno por ciento, la opción ganadora arrasó con un gobierno que, por otro lado, ya tenía una base a nivel mundial.",
+      "etiquetas": [
+        "gobierno"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0016",
+      "tipo": "GENESIS",
+      "titulo": "Agenda 2030",
+      "texto": "La agenda 2030 se había convertido en programa político representado democráticamente y la inmensa mayoría de la población con derecho a voto, esa es otra historia que tal vez algún día te pueda contar, decidió que esa opción debía tener una oportunidad.",
+      "etiquetas": [
+        "agenda-2030"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0017",
+      "tipo": "GENESIS",
+      "titulo": "Junta mundial",
+      "texto": "Así, el uno de enero de 2029 se instauró lo que vinimos a llamar Junta de Gobernación Mundial, que no era otra que un gobierno al uso como tú lo entiendes pero que, en lugar de países, pertenecías a una pieza federal.",
+      "etiquetas": [
+        "junta-mundial",
+        "gobierno"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0018",
+      "tipo": "GENESIS",
+      "titulo": "Avanzó como avanza",
+      "texto": "Avanzó como avanza un proyecto común sobre el que no hay ninguna referencia para comparar.",
+      "etiquetas": [
+        "genesis"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0019",
+      "tipo": "GENESIS",
+      "titulo": "La única forma",
+      "texto": "La única forma de valorar si había sido una bueno o una mala idea era tomar referencias con una situación anterior.",
+      "etiquetas": [
+        "genesis"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0020",
+      "tipo": "GENESIS",
+      "titulo": "Mi generación no",
+      "texto": "Mi generación no ha conocido otra cosa, ni invierte tiempo en valoraciones.",
+      "etiquetas": [
+        "genesis"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0021",
+      "tipo": "GENESIS",
+      "titulo": "El tiempo dirá",
+      "texto": "El tiempo dirá si hemos ido a mejor, o a peor.",
+      "etiquetas": [
+        "genesis"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0022",
+      "tipo": "GENESIS",
+      "titulo": "Te dejo a",
+      "texto": "Te dejo, a continuación, una de las primeras decisiones que esta junta tomó.",
+      "etiquetas": [
+        "junta-mundial"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0023",
+      "tipo": "GENESIS",
+      "titulo": "Documento #008",
+      "texto": "DOCUMENTO #008 --- AVISO IMPORTANTE.",
+      "etiquetas": [
+        "genesis"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0024",
+      "tipo": "GENESIS",
+      "titulo": "Junta mundial",
+      "texto": "La junta de gobernación mundial, instaurada bajo referéndum en 2029, viene a decretar.",
+      "etiquetas": [
+        "junta-mundial"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0025",
+      "tipo": "GENESIS",
+      "titulo": "Artículo único",
+      "texto": "-ARTÍCULO ÚNICO- Todos los ciudadanos que no cumplan con la nueva pauta de vacunación mundial deberán desplazarse antes de las 23:59h.",
+      "etiquetas": [
+        "vacunacion"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0026",
+      "tipo": "GENESIS",
+      "titulo": "Latitud 23",
+      "texto": "del próximo 31 de diciembre, por debajo de la latitud 23º al sur del Ecuador.",
+      "etiquetas": [
+        "genesis"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0027",
+      "tipo": "GENESIS",
+      "titulo": "Sellado firmado y",
+      "texto": "Sellado, firmado y publicado.",
+      "etiquetas": [
+        "genesis"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0028",
+      "tipo": "GENESIS",
+      "titulo": "También te dejo",
+      "texto": "También te dejo, a modo de esbozo, actualmente cuál es la situación.",
+      "etiquetas": [
+        "genesis"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0029",
+      "tipo": "GENESIS",
+      "titulo": "Madre Tierra",
+      "texto": "Referencia espiritual principal: la “Madre Tierra”.",
+      "etiquetas": [
+        "madre-tierra"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0030",
+      "tipo": "GENESIS",
+      "titulo": "Objetivo",
+      "texto": "Objetivo: control demográfico.",
+      "etiquetas": [
+        "control"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0031",
+      "tipo": "GENESIS",
+      "titulo": "Supremacía tecnológica",
+      "texto": "Impera la supremacía tecnológica.",
+      "etiquetas": [
+        "genesis"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0032",
+      "tipo": "GENESIS",
+      "titulo": "Estados nación",
+      "texto": "La libertad se ejecuta mediante la demolición de los estados nación.",
+      "etiquetas": [
+        "estados"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0033",
+      "tipo": "GENESIS",
+      "titulo": "Poder vertical",
+      "texto": "Se verticaliza el poder a nivel mundial.",
+      "etiquetas": [
+        "genesis"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0034",
+      "tipo": "GENESIS",
+      "titulo": "Relaciones automatizadas",
+      "texto": "Se digitalizan y automatizan las relaciones personales.",
+      "etiquetas": [
+        "digital"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0035",
+      "tipo": "GENESIS",
+      "titulo": "META",
+      "texto": "Todos los que cumplen con la pauta de vacunación estipulada por las autoridades tiene acceso a una META básica gratis.",
+      "etiquetas": [
+        "meta",
+        "vacunacion"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0036",
+      "tipo": "GENESIS",
+      "titulo": "Créditos",
+      "texto": "(Ya te he contado que para obtener mejores experiencias debes pagar créditos).",
+      "etiquetas": [
+        "genesis"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0037",
+      "tipo": "GENESIS",
+      "titulo": "Pensamiento estándar",
+      "texto": "La tecnología permite medir todas las respuestas generadas por la población y luego se toman medidas para ir estandarizando los pensamientos.",
+      "etiquetas": [
+        "tecnologia"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0038",
+      "tipo": "GENESIS",
+      "titulo": "No propicios",
+      "texto": "El mismo sistema delata y descarta a los no propicios y se les somete a un control exhaustivo en todos los aspectos.",
+      "etiquetas": [
+        "control"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0039",
+      "tipo": "GENESIS",
+      "titulo": "Trópico",
+      "texto": "Objetivo, empujar a toda la población residual por debajo del trópico de Capricornio.",
+      "etiquetas": [
+        "genesis"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0040",
+      "tipo": "GENESIS",
+      "titulo": "PARALELO",
+      "texto": "A esa zona se le llama el PARALELO.",
+      "etiquetas": [
+        "paralelo"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0041",
+      "tipo": "GENESIS",
+      "titulo": "PANGEA",
+      "texto": "A la zona que queda por encima de esa línea se la llama PANGEA.",
+      "etiquetas": [
+        "pangea"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0042",
+      "tipo": "GENESIS",
+      "titulo": "PARALELO",
+      "texto": "Los vacunados pueden moverse encima y por debajo del paralelo.",
+      "etiquetas": [
+        "paralelo",
+        "vacunacion"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0043",
+      "tipo": "GENESIS",
+      "titulo": "Los antiguos estados",
+      "texto": "Los antiguos estados, quedaran desprovistos de cualquier protección sore todo en materia tecnológica y principalmente en información y comunicación.",
+      "etiquetas": [
+        "estados"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0044",
+      "tipo": "GENESIS",
+      "titulo": "Agenda 2030",
+      "texto": "La agenda 2030 es la nueva constitución por encima de los estados.",
+      "etiquetas": [
+        "agenda-2030",
+        "estados"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0045",
+      "tipo": "GENESIS",
+      "titulo": "PARALELO",
+      "texto": "A los que no cumplen con todas las pautas de vacunación y que fueron empujados por debajo del paralelo, se les llama PARIAS.",
+      "etiquetas": [
+        "paralelo",
+        "parias",
+        "vacunacion"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0046",
+      "tipo": "GENESIS",
+      "titulo": "PANGEA",
+      "texto": "En PANGEA el aborto es un derecho gratuito.",
+      "etiquetas": [
+        "pangea"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0047",
+      "tipo": "GENESIS",
+      "titulo": "META",
+      "texto": "La población mundial se ha catalogado popularmente en tres grupos: Los METAS.",
+      "etiquetas": [
+        "meta",
+        "metas"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0048",
+      "tipo": "GENESIS",
+      "titulo": "PARALELO",
+      "texto": "Personas que viven en PANGEA (Por encima del PARALELO) conectadas prácticamente todo el día a una realidad virtual.",
+      "etiquetas": [
+        "pangea",
+        "paralelo"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0049",
+      "tipo": "GENESIS",
+      "titulo": "META",
+      "texto": "(También hay META por debajo del PARALELO, pero es otra historia que ahora no te puedo contar.) Los PROS.",
+      "etiquetas": [
+        "meta",
+        "paralelo",
+        "pros"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0050",
+      "tipo": "GENESIS",
+      "titulo": "META",
+      "texto": "Son los que residen en PANGEA y apenas se conectan a la META.",
+      "etiquetas": [
+        "meta",
+        "pangea"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0051",
+      "tipo": "GENESIS",
+      "titulo": "Vacunación",
+      "texto": "No hay registros de si cumplen con las pautas de vacunación.",
+      "etiquetas": [
+        "vacunacion"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0052",
+      "tipo": "GENESIS",
+      "titulo": "PARALELO",
+      "texto": "Personas que viven por debajo del paralelo y oficialmente, no tiene acceso ni a tecnología ni a formación.",
+      "etiquetas": [
+        "paralelo",
+        "tecnologia"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0053",
+      "tipo": "GENESIS",
+      "titulo": "Aquí te dejo",
+      "texto": "Aquí te dejo una pequeña tabla con algunos detalles más: 85% de la población.",
+      "etiquetas": [
+        "genesis"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0054",
+      "tipo": "GENESIS",
+      "titulo": "Disfrutan de los",
+      "texto": "Disfrutan de los recursos del planeta.",
+      "etiquetas": [
+        "genesis"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0055",
+      "tipo": "GENESIS",
+      "titulo": "Trópico",
+      "texto": "Viven por debajo del Trópico de Capricornio.",
+      "etiquetas": [
+        "genesis"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0056",
+      "tipo": "GENESIS",
+      "titulo": "Vacunación",
+      "texto": "No existen datos sobre si cumplen con las pautas de vacunación.",
+      "etiquetas": [
+        "vacunacion"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0057",
+      "tipo": "GENESIS",
+      "titulo": "Reproducción libre aunque",
+      "texto": "Reproducción libre, aunque perseguida.",
+      "etiquetas": [
+        "genesis"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0058",
+      "tipo": "GENESIS",
+      "titulo": "META",
+      "texto": "Meta es un mundo que recrea PANGEA sin limitaciones de ningún tipo.",
+      "etiquetas": [
+        "meta",
+        "pangea"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0059",
+      "tipo": "GENESIS",
+      "titulo": "PARALELO",
+      "texto": "Los vacunados por debajo del PARALELO, suelen ser reos o condenados.",
+      "etiquetas": [
+        "paralelo",
+        "vacunacion"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0060",
+      "tipo": "GENESIS",
+      "titulo": "META",
+      "texto": "Muchos METAS desconocen la existencia del PARALELO.",
+      "etiquetas": [
+        "meta",
+        "paralelo",
+        "metas"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0061",
+      "tipo": "GENESIS",
+      "titulo": "Características físicas similares",
+      "texto": "Características físicas similares.",
+      "etiquetas": [
+        "genesis"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0062",
+      "tipo": "GENESIS",
+      "titulo": "Ushuaia",
+      "texto": "Tienen un gobierno en el exilio, no reconocido y con una capital: Ushuaia.",
+      "etiquetas": [
+        "gobierno",
+        "ushuaia",
+        "exilio"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0063",
+      "tipo": "GENESIS",
+      "titulo": "META",
+      "texto": "Cuando te conectas a la META, corres el peligro de no ser consciente de que estás allí.",
+      "etiquetas": [
+        "meta"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0064",
+      "tipo": "GENESIS",
+      "titulo": "PARALELO",
+      "texto": "No hay transporte público por debajo del PARALELO.",
+      "etiquetas": [
+        "paralelo"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0065",
+      "tipo": "GENESIS",
+      "titulo": "PARIAS",
+      "texto": "Los PARIAS, puesto que no viajan tanto, separan y cultivan sus culturas con mayor diferenciación.",
+      "etiquetas": [
+        "parias"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0066",
+      "tipo": "GENESIS",
+      "titulo": "META",
+      "texto": "MUNDIAL AFECTA A META AFECTA A PROS AFECTA A PARIAS 2020.",
+      "etiquetas": [
+        "meta",
+        "parias",
+        "pros"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0067",
+      "tipo": "GENESIS",
+      "titulo": "Tecnología de realidad",
+      "texto": "Tecnología de Realidad Virtual.",
+      "etiquetas": [
+        "tecnologia"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0068",
+      "tipo": "GENESIS",
+      "titulo": "Primera muestra de",
+      "texto": "Primera muestra de resistencia.",
+      "etiquetas": [
+        "genesis"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0069",
+      "tipo": "GENESIS",
+      "titulo": "PROS",
+      "texto": "Primer paso de control para los PROS.",
+      "etiquetas": [
+        "pros",
+        "control"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0070",
+      "tipo": "GENESIS",
+      "titulo": "Una pequeña población",
+      "texto": "Una pequeña población privilegiada que disfruta de todos los recursos del planeta.",
+      "etiquetas": [
+        "genesis"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0071",
+      "tipo": "GENESIS",
+      "titulo": "PARALELO",
+      "texto": "Nace el concepto que luego será el PARALELO.",
+      "etiquetas": [
+        "paralelo"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0072",
+      "tipo": "GENESIS",
+      "titulo": "Una forma de",
+      "texto": "Una forma de vida discriminada y al margen de la sociedad dominante.",
+      "etiquetas": [
+        "genesis"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0073",
+      "tipo": "GENESIS",
+      "titulo": "META",
+      "texto": "META gratuita para vacunados.",
+      "etiquetas": [
+        "meta",
+        "vacunacion"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0074",
+      "tipo": "GENESIS",
+      "titulo": "PARALELO",
+      "texto": "Al territorio resultante por encima del PARALELO, se le denomina PANGEA y comparte gobierno.",
+      "etiquetas": [
+        "pangea",
+        "paralelo",
+        "gobierno"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0075",
+      "tipo": "GENESIS",
+      "titulo": "PARALELO",
+      "texto": "Obligados a migrar por debajo de los paralelos exigidos por el gobierno.",
+      "etiquetas": [
+        "paralelo",
+        "gobierno"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0076",
+      "tipo": "GENESIS",
+      "titulo": "PARALELO",
+      "texto": "A los que viven por debajo del PARALELO se les llama PARIAS.",
+      "etiquetas": [
+        "paralelo",
+        "parias"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0077",
+      "tipo": "GENESIS",
+      "titulo": "A partir de",
+      "texto": "A partir de ahí, ya te puedes imaginar.",
+      "etiquetas": [
+        "genesis"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0078",
+      "tipo": "GENESIS",
+      "titulo": "Sin rebelión",
+      "texto": "Todo tipo de dramas personales y familiares, pero ninguna rebelión.",
+      "etiquetas": [
+        "rebelion"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0079",
+      "tipo": "GENESIS",
+      "titulo": "Nadie se levantó",
+      "texto": "Nadie, absolutamente nadie, puso el grito en el cielo.",
+      "etiquetas": [
+        "genesis"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0080",
+      "tipo": "GENESIS",
+      "titulo": "Aceptación pacífica",
+      "texto": "Aceptación pacífica de la situación.",
+      "etiquetas": [
+        "aceptacion"
+      ],
+      "origen": "textual"
+    },
+    {
+      "id": "pangea-genesis-0081",
+      "tipo": "SENTENCIA",
+      "titulo": "La estabilidad",
+      "texto": "La estabilidad fue el argumento más limpio para entregar el mundo a una estructura que nadie sabía comparar.",
+      "etiquetas": [
+        "estabilidad",
+        "gobierno",
+        "genesis"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0082",
+      "tipo": "REFLEXION",
+      "titulo": "Gobernar poco",
+      "texto": "Cuando la META ocupó el centro de la vida, gobernar dejó de parecer administración de países y empezó a parecer administración de acceso.",
+      "etiquetas": [
+        "meta",
+        "gobierno",
+        "acceso"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0083",
+      "tipo": "SITUACION",
+      "titulo": "Mercado digital",
+      "texto": "Los grandes retos ya no estaban en el territorio. Estaban en el mercado digital donde se decidía la forma de estar vivos.",
+      "etiquetas": [
+        "digital",
+        "meta",
+        "pangea"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0084",
+      "tipo": "SEÑAL",
+      "titulo": "Elecciones frecuentes",
+      "texto": "La tecnología no eliminó la política: la hizo permanente, traducible, local y mundial al mismo tiempo.",
+      "etiquetas": [
+        "tecnologia",
+        "gobierno",
+        "digital"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0085",
+      "tipo": "SENTENCIA",
+      "titulo": "Firma digital",
+      "texto": "La firma digital convirtió el voto en un gesto sin desplazamiento y la representación en una frontera sin suelo.",
+      "etiquetas": [
+        "digital",
+        "voto",
+        "gobierno"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0086",
+      "tipo": "REFLEXION",
+      "titulo": "Candidato extranjero",
+      "texto": "Un político polaco, guineano o canadiense podía pedir un voto local: el lugar empezaba a obedecer a voces sin territorio.",
+      "etiquetas": [
+        "voto",
+        "ia",
+        "gobierno"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0087",
+      "tipo": "SITUACION",
+      "titulo": "Traducción simultánea",
+      "texto": "La inteligencia artificial no solo tradujo idiomas. Tradujo ambiciones globales a promesas locales.",
+      "etiquetas": [
+        "ia",
+        "digital",
+        "gobierno"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0088",
+      "tipo": "SEÑAL",
+      "titulo": "2029",
+      "texto": "En 2029 votar a un partido representado desde cualquier parte del mundo dejó de ser excepción y se volvió costumbre.",
+      "etiquetas": [
+        "2029",
+        "voto",
+        "agenda-2030"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0089",
+      "tipo": "MITOLOGIA",
+      "titulo": "La oportunidad",
+      "texto": "El mundo llamó oportunidad a una forma nueva de pertenecer al mismo bando.",
+      "etiquetas": [
+        "gobierno",
+        "agenda-2030",
+        "estabilidad"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0090",
+      "tipo": "SENTENCIA",
+      "titulo": "Mitad más uno",
+      "texto": "La mitad más uno bastaba para prometer representación; la inmensa mayoría bastó para fundar obediencia.",
+      "etiquetas": [
+        "voto",
+        "gobierno",
+        "agenda-2030"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0091",
+      "tipo": "REFLEXION",
+      "titulo": "Mal menor",
+      "texto": "No fue ingenuidad pura. Fue la aceptación razonada de un mal menor con estética de futuro.",
+      "etiquetas": [
+        "estabilidad",
+        "riesgo",
+        "gobierno"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0092",
+      "tipo": "SITUACION",
+      "titulo": "Base mundial",
+      "texto": "La opción ganadora no improvisó el mundo: ya tenía una base mundial esperando convertirse en gobierno.",
+      "etiquetas": [
+        "agenda-2030",
+        "gobierno",
+        "junta-mundial"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0093",
+      "tipo": "SENTENCIA",
+      "titulo": "Programa político",
+      "texto": "La Agenda 2030 dejó de ser agenda cuando se convirtió en programa político representado democráticamente.",
+      "etiquetas": [
+        "agenda-2030",
+        "gobierno"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0094",
+      "tipo": "AVISO",
+      "titulo": "Otra historia",
+      "texto": "El derecho a voto queda señalado como una historia pendiente. En PANGEA, lo omitido también gobierna.",
+      "etiquetas": [
+        "voto",
+        "genesis",
+        "gobierno"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0095",
+      "tipo": "MITOLOGIA",
+      "titulo": "Uno de enero",
+      "texto": "El 1 de enero de 2029 no empezó un año: empezó una pieza federal del mundo.",
+      "etiquetas": [
+        "2029",
+        "junta-mundial",
+        "pangea"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0096",
+      "tipo": "REFLEXION",
+      "titulo": "Sin referencia",
+      "texto": "La Junta avanzó sin referencia. Lo nuevo no podía medirse todavía; solo podía imponerse y esperar juicio.",
+      "etiquetas": [
+        "junta-mundial",
+        "gobierno",
+        "tiempo"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0097",
+      "tipo": "SENTENCIA",
+      "titulo": "Mi generación",
+      "texto": "Una generación que no ha conocido otra cosa no invierte tiempo en valorar la pérdida.",
+      "etiquetas": [
+        "memoria",
+        "generacion",
+        "pangea"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0098",
+      "tipo": "PREDICCION",
+      "titulo": "El tiempo dirá",
+      "texto": "El tiempo quedó como único tribunal posible: si fue mejora o caída, aún no había lenguaje para decirlo.",
+      "etiquetas": [
+        "tiempo",
+        "gobierno",
+        "genesis"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0099",
+      "tipo": "AVISO",
+      "titulo": "Documento #008",
+      "texto": "El Documento #008 convirtió una pauta sanitaria en geografía obligatoria.",
+      "etiquetas": [
+        "documento-008",
+        "vacunacion",
+        "paralelo"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0100",
+      "tipo": "AVISO",
+      "titulo": "00:00",
+      "texto": "A las 00:00, el mundo publicó una línea. A las 23:59 del 31 de diciembre, esa línea ya debía haber ordenado los cuerpos.",
+      "etiquetas": [
+        "documento-008",
+        "paralelo",
+        "tiempo"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0101",
+      "tipo": "SENTENCIA",
+      "titulo": "Artículo único",
+      "texto": "Un solo artículo bastó para dividir ciudadanía, movimiento y destino.",
+      "etiquetas": [
+        "documento-008",
+        "paralelo",
+        "control"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0102",
+      "tipo": "SITUACION",
+      "titulo": "Latitud 23",
+      "texto": "La latitud 23 al sur del Ecuador dejó de ser dato cartográfico y pasó a ser condena administrativa.",
+      "etiquetas": [
+        "paralelo",
+        "territorio",
+        "control"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0103",
+      "tipo": "OBJETIVO",
+      "titulo": "Desplazamiento",
+      "texto": "La orden no decía expulsión; decía desplazamiento. El lenguaje oficial siempre camina antes que la violencia.",
+      "etiquetas": [
+        "paralelo",
+        "documento-008",
+        "lenguaje"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0104",
+      "tipo": "MITOLOGIA",
+      "titulo": "Sellado",
+      "texto": "Sellado, firmado y publicado: tres palabras para que la intemperie pareciera procedimiento.",
+      "etiquetas": [
+        "documento-008",
+        "gobierno",
+        "control"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0105",
+      "tipo": "SITUACION",
+      "titulo": "Madre Tierra",
+      "texto": "La Madre Tierra fue referencia espiritual principal: una fe ecológica convertida en arquitectura de poder.",
+      "etiquetas": [
+        "madre-tierra",
+        "medio-ambiente",
+        "control"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0106",
+      "tipo": "OBJETIVO",
+      "titulo": "Control demográfico",
+      "texto": "El medio ambiente fue detonante; el control demográfico, objetivo. Entre ambos cabía todo el discurso.",
+      "etiquetas": [
+        "medio-ambiente",
+        "control",
+        "objetivo"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0107",
+      "tipo": "SENTENCIA",
+      "titulo": "Supremacía tecnológica",
+      "texto": "La supremacía tecnológica no necesitó declarar victoria. Bastó con volverse condición de vida.",
+      "etiquetas": [
+        "tecnologia",
+        "control",
+        "meta"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0108",
+      "tipo": "REFLEXION",
+      "titulo": "Libertad demolida",
+      "texto": "La libertad se ejecutó mediante la demolición de los estados nación: una palabra antigua para una operación nueva.",
+      "etiquetas": [
+        "libertad",
+        "estados",
+        "gobierno"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0109",
+      "tipo": "SITUACION",
+      "titulo": "Poder vertical",
+      "texto": "El poder se verticalizó a nivel mundial mientras las personas seguían llamándolo coordinación.",
+      "etiquetas": [
+        "poder",
+        "junta-mundial",
+        "gobierno"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0110",
+      "tipo": "SEÑAL",
+      "titulo": "Relaciones digitales",
+      "texto": "Las relaciones personales fueron digitalizadas y automatizadas: incluso el vínculo empezó a tener protocolo.",
+      "etiquetas": [
+        "digital",
+        "relaciones",
+        "meta"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0111",
+      "tipo": "VENTA",
+      "titulo": "META básica",
+      "texto": "La META básica era gratis para quienes cumplían. Lo gratuito no era regalo: era entrada.",
+      "etiquetas": [
+        "meta",
+        "vacunacion",
+        "creditos"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0112",
+      "tipo": "SENTENCIA",
+      "titulo": "Créditos",
+      "texto": "Para mejores experiencias había que pagar créditos. En PANGEA, la realidad también tenía versión premium.",
+      "etiquetas": [
+        "meta",
+        "creditos",
+        "pangea"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0113",
+      "tipo": "OBJETIVO",
+      "titulo": "Medición",
+      "texto": "La tecnología permitió medir respuestas de la población y convertirlas en material de estandarización.",
+      "etiquetas": [
+        "tecnologia",
+        "control",
+        "pensamiento"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0114",
+      "tipo": "AVISO",
+      "titulo": "Pensamiento estándar",
+      "texto": "Primero se miden respuestas. Después se ajusta el pensamiento. Al final, la diferencia parece error.",
+      "etiquetas": [
+        "control",
+        "pensamiento",
+        "tecnologia"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0115",
+      "tipo": "SITUACION",
+      "titulo": "No propicios",
+      "texto": "El sistema delata, descarta y somete a control exhaustivo a quienes no resultan propicios.",
+      "etiquetas": [
+        "control",
+        "no-propicios",
+        "sistema"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0116",
+      "tipo": "MITOLOGIA",
+      "titulo": "Año del éxodo",
+      "texto": "2029 quedó nombrado como el año del éxodo: cuando la política mundial aprendió a mover población.",
+      "etiquetas": [
+        "2029",
+        "exodo",
+        "paralelo"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0117",
+      "tipo": "OBJETIVO",
+      "titulo": "Año 2030",
+      "texto": "2030 tuvo un objetivo claro: empujar la población residual por debajo del Trópico de Capricornio.",
+      "etiquetas": [
+        "2030",
+        "objetivo",
+        "paralelo"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0118",
+      "tipo": "MAPA",
+      "titulo": "La línea",
+      "texto": "Por encima de la línea se llamó PANGEA. Por debajo, PARALELO. La geografía recibió jerarquía moral.",
+      "etiquetas": [
+        "pangea",
+        "paralelo",
+        "mapa"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0119",
+      "tipo": "SENTENCIA",
+      "titulo": "PANGEA",
+      "texto": "PANGEA no fue un continente: fue el territorio que quedó por encima de una decisión.",
+      "etiquetas": [
+        "pangea",
+        "territorio",
+        "paralelo"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0120",
+      "tipo": "SENTENCIA",
+      "titulo": "PARALELO",
+      "texto": "El PARALELO no fue una frontera nacional. Fue una frontera de acceso.",
+      "etiquetas": [
+        "paralelo",
+        "acceso",
+        "mapa"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0121",
+      "tipo": "SITUACION",
+      "titulo": "Movimiento desigual",
+      "texto": "Los vacunados podían moverse encima y por debajo de la línea; otros solo podían obedecerla.",
+      "etiquetas": [
+        "vacunacion",
+        "paralelo",
+        "movimiento"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0122",
+      "tipo": "AVISO",
+      "titulo": "Estados desprotegidos",
+      "texto": "Los antiguos estados quedaron sin protección tecnológica, informativa y comunicativa.",
+      "etiquetas": [
+        "estados",
+        "tecnologia",
+        "informacion"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0123",
+      "tipo": "SENTENCIA",
+      "titulo": "Nueva constitución",
+      "texto": "La Agenda 2030 fue la nueva constitución por encima de los estados.",
+      "etiquetas": [
+        "agenda-2030",
+        "constitucion",
+        "estados"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0124",
+      "tipo": "MITOLOGIA",
+      "titulo": "Nombre de los expulsados",
+      "texto": "A quienes no cumplieron todas las pautas y fueron empujados bajo la línea se les llamó PARIAS.",
+      "etiquetas": [
+        "parias",
+        "paralelo",
+        "vacunacion"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0125",
+      "tipo": "SITUACION",
+      "titulo": "Derechos de PANGEA",
+      "texto": "En PANGEA, el aborto es derecho gratuito y no hay concepto de género: el cuerpo también queda reescrito por sistema.",
+      "etiquetas": [
+        "pangea",
+        "cuerpo",
+        "sistema"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0126",
+      "tipo": "SITUACION",
+      "titulo": "Tres grupos",
+      "texto": "La población mundial se simplificó en tres nombres populares: METAS, PROS y PARIAS.",
+      "etiquetas": [
+        "metas",
+        "pros",
+        "parias"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0127",
+      "tipo": "PORCENTAJE",
+      "titulo": "85 por ciento",
+      "texto": "Los METAS eran el 85%: mayoría conectada, ciudadanía virtual, presencia casi permanente en realidad artificial.",
+      "etiquetas": [
+        "metas",
+        "meta",
+        "poblacion"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0128",
+      "tipo": "PORCENTAJE",
+      "titulo": "5 por ciento",
+      "texto": "Los PROS eran el 5%: vivían en PANGEA, apenas entraban en META y conservaban una opacidad estadística.",
+      "etiquetas": [
+        "pros",
+        "pangea",
+        "poblacion"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0129",
+      "tipo": "PORCENTAJE",
+      "titulo": "10 por ciento",
+      "texto": "Los PARIAS eran el 10%: bajo el PARALELO, sin acceso oficial a tecnología ni formación.",
+      "etiquetas": [
+        "parias",
+        "paralelo",
+        "poblacion"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0130",
+      "tipo": "SENTENCIA",
+      "titulo": "Mayoría virtual",
+      "texto": "Cuando el 85% vive en entorno virtual, la excepción empieza a parecer sospechosa.",
+      "etiquetas": [
+        "metas",
+        "meta",
+        "control"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0131",
+      "tipo": "SITUACION",
+      "titulo": "Recursos del planeta",
+      "texto": "Los PROS disfrutaban de los recursos del planeta: pocos, visibles, ceremoniosos, físicamente parecidos.",
+      "etiquetas": [
+        "pros",
+        "recursos",
+        "pangea"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0132",
+      "tipo": "SITUACION",
+      "titulo": "Control y guetos",
+      "texto": "Para los PARIAS, el texto junta dos palabras: control y guetos.",
+      "etiquetas": [
+        "parias",
+        "control",
+        "guetos"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0133",
+      "tipo": "SENTENCIA",
+      "titulo": "Reproducción libre",
+      "texto": "La reproducción era libre aunque perseguida: una libertad admitida para poder vigilarla.",
+      "etiquetas": [
+        "parias",
+        "reproduccion",
+        "control"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0134",
+      "tipo": "REFLEXION",
+      "titulo": "META recrea PANGEA",
+      "texto": "META recreaba PANGEA sin límites. La copia ofrecía más promesa que el territorio.",
+      "etiquetas": [
+        "meta",
+        "pangea",
+        "virtual"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0135",
+      "tipo": "AVISO",
+      "titulo": "META bajo la línea",
+      "texto": "También había META por debajo del PARALELO, pero el narrador la aplaza: en PANGEA, lo oculto siempre espera turno.",
+      "etiquetas": [
+        "meta",
+        "paralelo",
+        "secreto"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0136",
+      "tipo": "SITUACION",
+      "titulo": "Reos bajo la línea",
+      "texto": "Los vacunados bajo el PARALELO solían ser reos o condenados: la movilidad también podía ser castigo.",
+      "etiquetas": [
+        "paralelo",
+        "vacunacion",
+        "condena"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0137",
+      "tipo": "SENTENCIA",
+      "titulo": "Ignorancia META",
+      "texto": "Muchos METAS desconocían la existencia del PARALELO. La comodidad necesita mapas incompletos.",
+      "etiquetas": [
+        "metas",
+        "paralelo",
+        "memoria"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0138",
+      "tipo": "OBRA",
+      "titulo": "Avatar",
+      "texto": "Apariencia META: avatar. El cuerpo se volvió interfaz.",
+      "etiquetas": [
+        "metas",
+        "avatar",
+        "meta"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0139",
+      "tipo": "OBRA",
+      "titulo": "Barroco",
+      "texto": "Apariencia PRO: barroca. El privilegio conservó ceremonia.",
+      "etiquetas": [
+        "pros",
+        "barroco",
+        "pangea"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0140",
+      "tipo": "OBRA",
+      "titulo": "Estoico",
+      "texto": "Apariencia PARIA: estoica. La exclusión produjo una estética de resistencia sobria.",
+      "etiquetas": [
+        "parias",
+        "estoico",
+        "paralelo"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0141",
+      "tipo": "SENTENCIA",
+      "titulo": "Sin límites físicos",
+      "texto": "Los METAS vivían sin límites físicos; quizá por eso podían ignorar la línea física que ordenaba el mundo.",
+      "etiquetas": [
+        "metas",
+        "meta",
+        "paralelo"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0142",
+      "tipo": "SITUACION",
+      "titulo": "Habla común",
+      "texto": "METAS: trato común, habla común, moda común. La mayoría también tiene uniforme.",
+      "etiquetas": [
+        "metas",
+        "habla",
+        "moda"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0143",
+      "tipo": "SITUACION",
+      "titulo": "Habla barroca",
+      "texto": "PROS: trato ceremonioso, habla barroca, moda barroca. La élite convirtió la distancia en estilo.",
+      "etiquetas": [
+        "pros",
+        "barroco",
+        "elite"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0144",
+      "tipo": "SITUACION",
+      "titulo": "Habla sencilla",
+      "texto": "PARIAS: trato sencillo, habla sencilla, moda sencilla. Debajo de la línea, la vida vuelve a peso y uso.",
+      "etiquetas": [
+        "parias",
+        "habla",
+        "paralelo"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0145",
+      "tipo": "MITOLOGIA",
+      "titulo": "Ushuaia",
+      "texto": "Los PARIAS tenían un gobierno en el exilio, no reconocido, con capital en Ushuaia.",
+      "etiquetas": [
+        "parias",
+        "ushuaia",
+        "exilio"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0146",
+      "tipo": "AVISO",
+      "titulo": "Peligro de META",
+      "texto": "Al conectarte a la META, corres el peligro de no ser consciente de que estás allí.",
+      "etiquetas": [
+        "meta",
+        "aviso",
+        "conciencia"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0147",
+      "tipo": "SENTENCIA",
+      "titulo": "No darse cuenta",
+      "texto": "La prisión perfecta no impide salir: impide saber que has entrado.",
+      "etiquetas": [
+        "meta",
+        "conciencia",
+        "control"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0148",
+      "tipo": "SITUACION",
+      "titulo": "Sin transporte",
+      "texto": "Por debajo del PARALELO no hay transporte público. La distancia se vuelve política.",
+      "etiquetas": [
+        "paralelo",
+        "transporte",
+        "parias"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0149",
+      "tipo": "REFLEXION",
+      "titulo": "Culturas PARIAS",
+      "texto": "Como los PARIAS viajan menos, separan y cultivan sus culturas con mayor diferenciación.",
+      "etiquetas": [
+        "parias",
+        "cultura",
+        "paralelo"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0150",
+      "tipo": "SENTENCIA",
+      "titulo": "La inmovilidad cultiva",
+      "texto": "La inmovilidad impuesta termina produciendo culturas más diferenciadas.",
+      "etiquetas": [
+        "parias",
+        "cultura",
+        "territorio"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0151",
+      "tipo": "CRONOLOGIA",
+      "titulo": "2020",
+      "texto": "2020: pandemia y tecnología de realidad virtual. El origen aparece como emergencia y herramienta.",
+      "etiquetas": [
+        "2020",
+        "pandemia",
+        "realidad-virtual"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0152",
+      "tipo": "CRONOLOGIA",
+      "titulo": "2022",
+      "texto": "2022: vacunación y primera muestra de resistencia. La división todavía estaba naciendo.",
+      "etiquetas": [
+        "2022",
+        "vacunacion",
+        "resistencia"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0153",
+      "tipo": "CRONOLOGIA",
+      "titulo": "Certificados",
+      "texto": "2022: certificados obligatorios, masificación de META y primer paso de control para los PROS.",
+      "etiquetas": [
+        "2022",
+        "certificados",
+        "meta"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0154",
+      "tipo": "CRONOLOGIA",
+      "titulo": "Concepto PARALELO",
+      "texto": "Nace el concepto que luego será el PARALELO: primero idea, después línea, después destino.",
+      "etiquetas": [
+        "paralelo",
+        "cronologia",
+        "control"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0155",
+      "tipo": "CRONOLOGIA",
+      "titulo": "2030",
+      "texto": "2030: META gratuita para vacunados y consolidación de PANGEA como territorio gobernado.",
+      "etiquetas": [
+        "2030",
+        "meta",
+        "pangea"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0156",
+      "tipo": "AVISO",
+      "titulo": "Migración obligatoria",
+      "texto": "Los no vacunados fueron obligados a migrar por debajo de los paralelos exigidos por el gobierno.",
+      "etiquetas": [
+        "vacunacion",
+        "paralelo",
+        "migracion"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0157",
+      "tipo": "SENTENCIA",
+      "titulo": "A partir de ahí",
+      "texto": "A partir de ahí, ya te puedes imaginar: el texto se detiene donde empieza el drama íntimo.",
+      "etiquetas": [
+        "drama",
+        "familia",
+        "genesis"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0158",
+      "tipo": "DIARIO",
+      "titulo": "Dramas familiares",
+      "texto": "Hubo todo tipo de dramas personales y familiares, pero ninguna rebelión.",
+      "etiquetas": [
+        "familia",
+        "rebelion",
+        "aceptacion"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0159",
+      "tipo": "SENTENCIA",
+      "titulo": "Nadie gritó",
+      "texto": "Nadie puso el grito en el cielo. Nadie se levantó. La historia avanzó con una calma insoportable.",
+      "etiquetas": [
+        "rebelion",
+        "aceptacion",
+        "genesis"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0160",
+      "tipo": "REFLEXION",
+      "titulo": "Aceptación pacífica",
+      "texto": "La aceptación pacífica de la situación es el verdadero horror político del Génesis.",
+      "etiquetas": [
+        "aceptacion",
+        "pangea",
+        "gobierno"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0161",
+      "tipo": "PREDICCION",
+      "titulo": "Sin rebelión",
+      "texto": "El sistema no necesitó aplastar una rebelión. Había conseguido algo mayor: que no naciera.",
+      "etiquetas": [
+        "control",
+        "rebelion",
+        "aceptacion"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0162",
+      "tipo": "SENTENCIA",
+      "titulo": "Catástrofe sin nombre",
+      "texto": "La separación casi nadie se atrevió a llamarla catástrofe; quizá por eso pudo completarse.",
+      "etiquetas": [
+        "paralelo",
+        "aceptacion",
+        "lenguaje"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0163",
+      "tipo": "REFLEXION",
+      "titulo": "Burocracia y responsabilidad",
+      "texto": "La coalición repartió burocracia y responsabilidad: dos formas limpias de repartir culpa.",
+      "etiquetas": [
+        "coalicion",
+        "burocracia",
+        "gobierno"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0164",
+      "tipo": "SEÑAL",
+      "titulo": "Marco de progreso",
+      "texto": "Garantizar estabilidad prometía un marco para progresar; nadie preguntó quién dibujaba el marco.",
+      "etiquetas": [
+        "estabilidad",
+        "progreso",
+        "gobierno"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0165",
+      "tipo": "OBJETIVO",
+      "titulo": "Población residual",
+      "texto": "La expresión población residual revela el fondo del sistema: no todos cuentan como población completa.",
+      "etiquetas": [
+        "parias",
+        "control",
+        "lenguaje"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0166",
+      "tipo": "SENTENCIA",
+      "titulo": "La línea negra",
+      "texto": "La línea negra del mapa no explica el mundo: lo acusa.",
+      "etiquetas": [
+        "mapa",
+        "paralelo",
+        "pangea"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0167",
+      "tipo": "MITOLOGIA",
+      "titulo": "PANGEA arriba",
+      "texto": "Arriba quedó PANGEA, con gobierno compartido y acceso. Abajo quedó el nombre de los excluidos.",
+      "etiquetas": [
+        "pangea",
+        "paralelo",
+        "parias"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0168",
+      "tipo": "MITOLOGIA",
+      "titulo": "PARALELO abajo",
+      "texto": "Debajo del Trópico de Capricornio nació una humanidad oficialmente residual.",
+      "etiquetas": [
+        "paralelo",
+        "parias",
+        "territorio"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0169",
+      "tipo": "AVISO",
+      "titulo": "Información y comunicación",
+      "texto": "Cuando los antiguos estados perdieron protección informativa y comunicativa, la realidad pública quedó centralizada.",
+      "etiquetas": [
+        "estados",
+        "informacion",
+        "comunicacion"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0170",
+      "tipo": "REFLEXION",
+      "titulo": "Digitalizar vínculos",
+      "texto": "Digitalizar relaciones personales permite medirlas; automatizarlas permite corregirlas.",
+      "etiquetas": [
+        "digital",
+        "relaciones",
+        "control"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0171",
+      "tipo": "SENTENCIA",
+      "titulo": "Gratis",
+      "texto": "Lo gratis en PANGEA no elimina precio. Lo desplaza hacia obediencia, datos y créditos.",
+      "etiquetas": [
+        "meta",
+        "creditos",
+        "control"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0172",
+      "tipo": "SITUACION",
+      "titulo": "Datos de PROS",
+      "texto": "De los PROS no hay registros sobre las pautas. La falta de datos también puede ser privilegio.",
+      "etiquetas": [
+        "pros",
+        "datos",
+        "privilegio"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0173",
+      "tipo": "REFLEXION",
+      "titulo": "Mayoría y desconocimiento",
+      "texto": "Una mayoría conectada puede desconocer una frontera real si su mundo virtual no la necesita.",
+      "etiquetas": [
+        "metas",
+        "meta",
+        "paralelo"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0174",
+      "tipo": "SENTENCIA",
+      "titulo": "Gobierno en exilio",
+      "texto": "Un gobierno no reconocido en Ushuaia mantiene una idea mínima: debajo de la línea todavía hay política.",
+      "etiquetas": [
+        "ushuaia",
+        "exilio",
+        "parias"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0175",
+      "tipo": "DIARIO",
+      "titulo": "Otra historia",
+      "texto": "“Es otra historia” aparece como puerta cerrada. El narrador sabe más de lo que entrega.",
+      "etiquetas": [
+        "narrador",
+        "secreto",
+        "genesis"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0176",
+      "tipo": "SENTENCIA",
+      "titulo": "No fue ni bien ni mal",
+      "texto": "No fue ni bien ni mal: esa neutralidad es la música administrativa de una mutación histórica.",
+      "etiquetas": [
+        "junta-mundial",
+        "gobierno",
+        "lenguaje"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0177",
+      "tipo": "REFLEXION",
+      "titulo": "Comparar",
+      "texto": "Sin referencia anterior, comparar se vuelve imposible. Y lo imposible de comparar cuesta más resistirlo.",
+      "etiquetas": [
+        "memoria",
+        "comparacion",
+        "control"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0178",
+      "tipo": "SEÑAL",
+      "titulo": "Pertenencia al bando",
+      "texto": "La sensación de pertenecer al mismo bando fue usada como promesa de estabilidad mundial.",
+      "etiquetas": [
+        "gobierno",
+        "estabilidad",
+        "pertenencia"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0179",
+      "tipo": "SENTENCIA",
+      "titulo": "Todo el poder",
+      "texto": "Todo el poder de todo para todos: la frase suena universal hasta que aparece la línea.",
+      "etiquetas": [
+        "agenda-2030",
+        "poder",
+        "paralelo"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0180",
+      "tipo": "AVISO",
+      "titulo": "Derecho a voto",
+      "texto": "La inmensa mayoría con derecho a voto decidió. El texto deja suspendida la pregunta por quienes no lo tenían.",
+      "etiquetas": [
+        "voto",
+        "gobierno",
+        "exclusion"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0181",
+      "tipo": "OBJETIVO",
+      "titulo": "Estandarizar",
+      "texto": "Estandarizar pensamientos convierte la diversidad interior en problema técnico.",
+      "etiquetas": [
+        "pensamiento",
+        "control",
+        "tecnologia"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0182",
+      "tipo": "PREDICCION",
+      "titulo": "Mapa futuro",
+      "texto": "Si PANGEA crece, no crecerá por países. Crecerá por accesos, pautas, créditos y relatos autorizados.",
+      "etiquetas": [
+        "pangea",
+        "futuro",
+        "control"
+      ],
+      "origen": "derivado-del-genesis"
+    },
+    {
+      "id": "pangea-genesis-0183",
+      "tipo": "SENTENCIA",
+      "titulo": "El visitante",
+      "texto": "Quien mira el mapa no está viendo dónde viven los otros. Está viendo qué precio tiene quedar fuera.",
+      "etiquetas": [
+        "mapa",
+        "paralelo",
+        "visitante"
+      ],
+      "origen": "derivado-del-genesis"
+    }
+  ]
+}

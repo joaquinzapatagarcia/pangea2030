@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PANGEA 2030</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #ffffff;
+      --paper: #ffffff;
+      --paper-soft: #ffffff;
+      --fg: #111111;
+      --muted: #6f7f82;
+      --line: #b8d7dc;
+      --line-soft: #dcecee;
+      --accent: #111111;
+      --water: #8fbfc8;
+      --font: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      --serif: Georgia, "Times New Roman", serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      background: var(--bg);
+      overflow-x: hidden;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: var(--font);
+      display: grid;
+      place-items: center;
+      padding: 20px;
+    }
+
+    .pangea {
+      width: min(1100px, 100%);
+      border: 1px solid var(--line);
+      background: var(--paper);
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: none;
+    }
+
+    .topbar,
+    .controls,
+    .map-panel,
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 13px 16px;
+      flex-wrap: wrap;
+      background: var(--paper);
+    }
+
+    .topbar,
+    .controls {
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand {
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-size: 12px;
+      color: var(--fg);
+    }
+
+    .pulse {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 0;
+      background: var(--fg);
+      margin-right: 8px;
+    }
+
+    .meta,
+    .season {
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .screen {
+      min-height: 440px;
+      display: grid;
+      align-content: center;
+      gap: 20px;
+      padding: clamp(24px, 5vw, 62px);
+      background:
+        linear-gradient(0deg, transparent 24px, rgba(184, 215, 220, 0.18) 25px, transparent 26px),
+        linear-gradient(90deg, transparent 24px, rgba(184, 215, 220, 0.16) 25px, transparent 26px),
+        var(--paper);
+      background-size: 26px 26px;
+    }
+
+    .type-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--muted);
+      font-size: 12px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .type-row::before {
+      content: "";
+      width: 34px;
+      height: 1px;
+      background: var(--fg);
+      display: inline-block;
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 900px;
+      font-family: var(--serif);
+      font-size: clamp(38px, 7vw, 88px);
+      line-height: 0.96;
+      font-weight: 500;
+      letter-spacing: 0;
+    }
+
+    .text {
+      margin: 0;
+      max-width: 920px;
+      color: var(--fg);
+      font-size: clamp(17px, 2.1vw, 25px);
+      line-height: 1.38;
+    }
+
+    .visual {
+      display: block;
+      width: min(760px, 100%);
+      max-height: 330px;
+      object-fit: contain;
+      border: 1px solid var(--line-soft);
+      border-radius: 4px;
+      background: #ffffff;
+      padding: 10px;
+    }
+
+    .visual[hidden] {
+      display: none;
+    }
+
+    .tags {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 2px;
+    }
+
+    .tag {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--muted);
+      background: rgba(255, 255, 255, 0.72);
+      padding: 4px 9px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .button-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    button {
+      border: 1px solid var(--line);
+      background: var(--paper);
+      color: var(--fg);
+      border-radius: 4px;
+      padding: 8px 10px;
+      font: inherit;
+      cursor: pointer;
+    }
+
+    button[aria-pressed="true"],
+    button:hover {
+      border-color: var(--fg);
+      color: var(--fg);
+      background: var(--paper-soft);
+    }
+
+    .map-panel {
+      align-items: stretch;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      background: var(--paper-soft);
+    }
+
+    .map-copy {
+      flex: 1 1 260px;
+      display: grid;
+      align-content: center;
+      gap: 8px;
+      min-width: 0;
+    }
+
+    .map-title {
+      margin: 0;
+      color: var(--fg);
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .map-text {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+      max-width: 560px;
+    }
+
+    .map-image {
+      flex: 0 1 360px;
+      width: min(360px, 100%);
+      object-fit: contain;
+      border: 1px solid var(--line-soft);
+      border-radius: 4px;
+      background: #ffffff;
+      padding: 6px;
+    }
+
+    .footer {
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    @media (max-width: 700px) {
+      body {
+        padding: 0;
+        place-items: start stretch;
+      }
+
+      .pangea {
+        width: 100%;
+        border-left: 0;
+        border-right: 0;
+        border-radius: 0;
+      }
+
+      .screen {
+        min-height: 340px;
+        gap: 14px;
+        padding: 32px 18px;
+      }
+
+      h1 {
+        font-size: clamp(38px, 16vw, 62px);
+      }
+
+      .text {
+        font-size: 17px;
+      }
+
+      .button-row,
+      button {
+        width: 100%;
+      }
+
+      .map-image {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="pangea" data-source="pangea.json">
+    <header class="topbar">
+      <div class="brand"><span class="pulse" aria-hidden="true"></span>PANGEA 2030</div>
+      <div class="meta" data-field="meta">BIG BANG · VERSION 0.1.0</div>
+    </header>
+
+    <section class="screen" aria-live="polite" aria-atomic="true">
+      <div class="type-row" data-field="type">GENESIS</div>
+      <h1 data-field="title">La ingobernabilidad</h1>
+      <p class="text" data-field="text">Antes de PANGEA hubo cansancio. La estabilidad empezo a venderse como una forma superior de madurez.</p>
+      <img class="visual" data-field="visual" alt="" hidden>
+      <div class="tags" data-field="tags"></div>
+    </section>
+
+    <section class="controls">
+      <div class="button-row" aria-label="Controles del teletipo">
+        <button type="button" data-action="genesis">G&Eacute;NESIS</button>
+        <button type="button" data-action="next">SIGUIENTE</button>
+        <button type="button" data-action="auto" aria-pressed="false">AUTO</button>
+      </div>
+      <div class="season" data-field="count">0 emisiones</div>
+    </section>
+
+    <section class="map-panel" aria-label="Mapa del Paralelo">
+      <div class="map-copy">
+        <p class="map-title" data-field="map-title">MAPA DEL PARALELO</p>
+        <p class="map-text" data-field="map-text">La linea no divide paises. Divide acceso, memoria, tecnologia y destino.</p>
+      </div>
+      <img class="map-image" data-field="map-image" src="paralelo.jpg" alt="Mapa del Paralelo">
+    </section>
+
+    <footer class="footer">
+      <span>LA ESTABILIDAD PUEDE SER UNA TRAMPA.</span>
+      <span>LA MAYORÍA ES LA VERDAD.</span>
+    </footer>
+  </main>
+
+  <script>
+    (function () {
+      const root = document.querySelector(".pangea");
+      const fields = {
+        meta: root.querySelector('[data-field="meta"]'),
+        type: root.querySelector('[data-field="type"]'),
+        title: root.querySelector('[data-field="title"]'),
+        text: root.querySelector('[data-field="text"]'),
+        visual: root.querySelector('[data-field="visual"]'),
+        tags: root.querySelector('[data-field="tags"]'),
+        count: root.querySelector('[data-field="count"]'),
+        mapTitle: root.querySelector('[data-field="map-title"]'),
+        mapText: root.querySelector('[data-field="map-text"]'),
+        mapImage: root.querySelector('[data-field="map-image"]')
+      };
+
+      const fallback = {
+        meta: {
+          universo: "PANGEA 2030",
+          version: "0.1.0",
+          estado: "libertad decretada",
+          temporada: "temporada-00-big-bang"
+        },
+        mapa: {
+          titulo: "Mapa del PARALELO",
+          texto: "La linea no divide paises. Divide acceso, memoria, tecnologia y destino.",
+          imagen: "paralelo.jpg"
+        },
+        items: [
+          {
+            id: "pangea-0001",
+            tipo: "GENESIS",
+            titulo: "Documento #008",
+            texto: "El 1 de enero de 2030, la Junta de Gobernacion Mundial decreto el desplazamiento de los no cumplidores por debajo de la latitud 23 grados sur.",
+            etiquetas: ["origen", "decreto", "junta"]
+          },
+          {
+            id: "pangea-0002",
+            tipo: "GENESIS",
+            titulo: "El Paralelo",
+            texto: "La linea no dividia paises. Dividia destino. Por encima quedaba PANGEA. Por debajo empezaba el PARALELO.",
+            etiquetas: ["mapa", "paralelo", "territorio"]
+          }
+        ]
+      };
+
+      let data = fallback;
+      let current = -1;
+      let deck = [];
+      let deckPosition = 0;
+      let timer = null;
+      let auto = false;
+
+      function list() {
+        return data.items;
+      }
+
+      function renderTags(tags) {
+        fields.tags.replaceChildren();
+        tags.forEach(function (tag) {
+          const el = document.createElement("span");
+          el.className = "tag";
+          el.textContent = tag;
+          fields.tags.appendChild(el);
+        });
+      }
+
+      function renderMap() {
+        if (!data.mapa) return;
+        fields.mapTitle.textContent = data.mapa.titulo || "Mapa del PARALELO";
+        fields.mapText.textContent = data.mapa.texto || "";
+        if (data.mapa.imagen) {
+          fields.mapImage.src = data.mapa.imagen;
+          fields.mapImage.alt = data.mapa.titulo || "Mapa del Paralelo";
+        }
+      }
+
+      function shuffleDeck(items) {
+        deck = items.map(function (_item, index) {
+          return index;
+        });
+
+        for (let i = deck.length - 1; i > 0; i -= 1) {
+          const j = Math.floor(Math.random() * (i + 1));
+          const temp = deck[i];
+          deck[i] = deck[j];
+          deck[j] = temp;
+        }
+
+        if (deck.length > 1 && deck[0] === current) {
+          const temp = deck[0];
+          deck[0] = deck[1];
+          deck[1] = temp;
+        }
+
+        deckPosition = 0;
+      }
+
+      function nextDeckIndex() {
+        const items = list();
+        if (!items.length) return -1;
+        if (deck.length !== items.length || deckPosition >= deck.length) {
+          shuffleDeck(items);
+        }
+        const index = deck[deckPosition];
+        deckPosition += 1;
+        return index;
+      }
+
+      function render(index) {
+        const items = list();
+        if (!items.length) {
+          fields.type.textContent = "GENESIS";
+          fields.title.textContent = "Sin emisiones";
+          fields.text.textContent = "Todavia no hay material publicado en esta categoria.";
+          fields.visual.hidden = true;
+          fields.visual.removeAttribute("src");
+          fields.count.textContent = "0 emisiones";
+          renderTags([]);
+          return;
+        }
+
+        current = typeof index === "number" ? index : nextDeckIndex();
+        const item = items[current];
+        const status = (data.meta.estado || "emision").toUpperCase();
+        const version = data.meta.version || "0.1.0";
+        fields.meta.textContent = status + " · VERSION " + version;
+        fields.type.textContent = item.tipo;
+        fields.title.textContent = item.titulo;
+        fields.text.textContent = item.texto;
+        if (item.imagen) {
+          fields.visual.src = item.imagen;
+          fields.visual.alt = item.titulo;
+          fields.visual.hidden = false;
+        } else {
+          fields.visual.hidden = true;
+          fields.visual.removeAttribute("src");
+          fields.visual.alt = "";
+        }
+        fields.count.textContent = items.length + " fragmentos";
+        renderTags(item.etiquetas || []);
+        renderMap();
+      }
+
+      function showNext() {
+        const items = list();
+        if (!items.length) return;
+        render(nextDeckIndex());
+      }
+
+      function setAuto(enabled) {
+        auto = enabled;
+        root.querySelector('[data-action="auto"]').setAttribute("aria-pressed", String(auto));
+        if (timer) window.clearInterval(timer);
+        if (auto) {
+          showNext();
+          timer = window.setInterval(showNext, 30000);
+        }
+      }
+
+      root.querySelector('[data-action="genesis"]').addEventListener("click", showNext);
+      root.querySelector('[data-action="next"]').addEventListener("click", showNext);
+      root.querySelector('[data-action="auto"]').addEventListener("click", function () {
+        setAuto(!auto);
+      });
+
+      fetch(root.dataset.source)
+        .then(function (response) {
+          if (!response.ok) throw new Error("No JSON");
+          return response.json();
+        })
+        .then(function (loaded) {
+          data = loaded;
+          deck = [];
+          deckPosition = 0;
+          renderMap();
+          showNext();
+        })
+        .catch(function () {
+          renderMap();
+          showNext();
+        });
+    }());
+  </script>
+</body>
+</html>

@@ -98,6 +98,7 @@
       align-content: center;
       gap: 20px;
       padding: clamp(24px, 5vw, 62px);
+      min-width: 0;
       background:
         linear-gradient(0deg, transparent 24px, rgba(184, 215, 220, 0.18) 25px, transparent 26px),
         linear-gradient(90deg, transparent 24px, rgba(184, 215, 220, 0.16) 25px, transparent 26px),
@@ -125,20 +126,28 @@
 
     h1 {
       margin: 0;
+      width: 100%;
       max-width: 900px;
       font-family: var(--serif);
       font-size: clamp(38px, 7vw, 88px);
       line-height: 0.96;
       font-weight: 500;
       letter-spacing: 0;
+      overflow-wrap: anywhere;
+      word-break: normal;
+      hyphens: auto;
     }
 
     .text {
       margin: 0;
+      width: 100%;
       max-width: 920px;
       color: var(--fg);
       font-size: clamp(17px, 2.1vw, 25px);
       line-height: 1.38;
+      overflow-wrap: anywhere;
+      word-break: normal;
+      hyphens: auto;
     }
 
     .visual {
@@ -161,6 +170,8 @@
       gap: 8px;
       flex-wrap: wrap;
       margin-top: 2px;
+      min-width: 0;
+      max-width: 100%;
     }
 
     .tag {
@@ -172,6 +183,8 @@
       font-size: 12px;
       text-transform: uppercase;
       letter-spacing: 0.08em;
+      max-width: 100%;
+      overflow-wrap: anywhere;
     }
 
     .button-row {
@@ -226,6 +239,7 @@
       font-size: 13px;
       line-height: 1.45;
       max-width: 560px;
+      overflow-wrap: anywhere;
     }
 
     .map-image {
@@ -262,15 +276,17 @@
       .screen {
         min-height: 340px;
         gap: 14px;
-        padding: 32px 18px;
+        padding: 30px 14px;
       }
 
       h1 {
-        font-size: clamp(38px, 16vw, 62px);
+        font-size: clamp(32px, 13vw, 54px);
+        line-height: 1.02;
       }
 
       .text {
-        font-size: 17px;
+        font-size: 16px;
+        line-height: 1.42;
       }
 
       .button-row,

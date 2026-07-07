@@ -92,6 +92,17 @@
       letter-spacing: 0.08em;
     }
 
+    .signal-panel {
+      display: grid;
+      justify-items: end;
+      gap: 5px;
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      min-width: 220px;
+    }
+
     .screen {
       min-height: 440px;
       display: grid;
@@ -210,6 +221,12 @@
       background: var(--paper-soft);
     }
 
+    button:disabled {
+      cursor: not-allowed;
+      opacity: 0.45;
+      border-color: var(--line);
+    }
+
     .map-panel {
       align-items: stretch;
       border-top: 1px solid var(--line);
@@ -290,8 +307,13 @@
       }
 
       .button-row,
-      button {
+      button,
+      .signal-panel {
         width: 100%;
+      }
+
+      .signal-panel {
+        justify-items: start;
       }
 
       .map-image {
@@ -321,8 +343,12 @@
         <button type="button" data-action="next">SIGUIENTE</button>
         <button type="button" data-action="auto" aria-pressed="false">AUTO</button>
         <button type="button" data-action="radio" aria-pressed="false">ACTIVAR EMISIÓN</button>
+        <button type="button" data-action="radio-next" disabled>SIGUIENTE PISTA</button>
       </div>
-      <div class="season" data-field="count">0 emisiones</div>
+      <div class="signal-panel">
+        <div data-field="count">0 emisiones</div>
+        <div data-field="radio-track">RADIO PANGEA · SEÑAL EN ESPERA</div>
+      </div>
     </section>
 
     <section class="map-panel" aria-label="Mapa del Paralelo">
@@ -341,10 +367,18 @@
 
   <script>
     (function () {
-      const PANGEA_HTML_V = 1;
+      const PANGEA_HTML_V = 3;
       const PANGEA_JSON_V = 1;
-      const PANGEA_AUDIO_V = 1;
+      const PANGEA_AUDIO_V = 2;
       const RADIO_VOLUME = 0.18;
+      const RADIO_PLAYLIST = [
+        { src: "pangea_radio_01_intro2.mp3", title: "01 · Intro 2" },
+        { src: "pangea_radio_02_instrumental.mp3", title: "02 · Cancion instrumental" },
+        { src: "pangea_radio_03_batucada_cyberpunk.mp3", title: "03 · Batucada Cyberpunk" },
+        { src: "pangea_radio_04_intro_original.mp3", title: "04 · Intro original" },
+        { src: "pangea_radio_05_bajo_el_paralelo.mp3", title: "05 · Bajo el Paralelo" },
+        { src: "pangea_radio_06_batucada_cyberpunk_1.mp3", title: "06 · Batucada Cyberpunk 1" }
+      ];
 
       const root = document.querySelector(".pangea");
       const fields = {
@@ -355,6 +389,7 @@
         visual: root.querySelector('[data-field="visual"]'),
         tags: root.querySelector('[data-field="tags"]'),
         count: root.querySelector('[data-field="count"]'),
+        radioTrack: root.querySelector('[data-field="radio-track"]'),
         mapTitle: root.querySelector('[data-field="map-title"]'),
         mapText: root.querySelector('[data-field="map-text"]'),
         mapImage: root.querySelector('[data-field="map-image"]')
@@ -397,8 +432,8 @@
       let timer = null;
       let auto = false;
       let radioOn = false;
-      let radioIntro = null;
-      let radioLoop = null;
+      let radioTracks = [];
+      let radioIndex = 0;
 
       function versioned(path, version) {
         return path + (path.indexOf("?") === -1 ? "?v=" : "&v=") + version;
@@ -513,42 +548,55 @@
 
       function updateRadioButton() {
         const button = root.querySelector('[data-action="radio"]');
+        const nextButton = root.querySelector('[data-action="radio-next"]');
         button.textContent = radioOn ? "CORTAR SEÑAL" : "ACTIVAR EMISIÓN";
         button.setAttribute("aria-pressed", String(radioOn));
+        nextButton.disabled = !radioOn;
+        if (!radioOn) {
+          fields.radioTrack.textContent = "RADIO PANGEA · SEÑAL EN ESPERA";
+        }
       }
 
       function prepareRadio() {
-        if (radioIntro && radioLoop) return;
+        if (radioTracks.length) return;
 
-        radioIntro = new Audio(versioned("pangea_radio_intro.mp3", PANGEA_AUDIO_V));
-        radioLoop = new Audio(versioned("pangea_radio_loop.mp3", PANGEA_AUDIO_V));
+        radioTracks = RADIO_PLAYLIST.map(function (item) {
+          const track = new Audio(versioned(item.src, PANGEA_AUDIO_V));
+          track.preload = "auto";
+          track.volume = RADIO_VOLUME;
+          track.addEventListener("ended", playNextRadioTrack);
+          return track;
+        });
+      }
 
-        radioIntro.preload = "auto";
-        radioLoop.preload = "auto";
-        radioIntro.volume = RADIO_VOLUME;
-        radioLoop.volume = RADIO_VOLUME;
-        radioLoop.loop = true;
-
-        radioIntro.addEventListener("ended", function () {
-          if (!radioOn) return;
-          radioLoop.currentTime = 0;
-          radioLoop.play().catch(function () {
+      function playRadioTrack(index) {
+        if (!radioOn || !radioTracks.length) return;
+        radioTracks.forEach(function (track) {
+          track.pause();
+          track.currentTime = 0;
+        });
+        radioIndex = index % radioTracks.length;
+        const track = radioTracks[radioIndex];
+        track.currentTime = 0;
+        fields.radioTrack.textContent = "EMITIENDO · " + RADIO_PLAYLIST[radioIndex].title;
+        track.play().catch(function () {
             radioOn = false;
             updateRadioButton();
           });
-        });
+      }
+
+      function playNextRadioTrack() {
+        if (!radioOn || !radioTracks.length) return;
+        playRadioTrack((radioIndex + 1) % radioTracks.length);
       }
 
       function stopRadio() {
         radioOn = false;
-        if (radioIntro) {
-          radioIntro.pause();
-          radioIntro.currentTime = 0;
-        }
-        if (radioLoop) {
-          radioLoop.pause();
-          radioLoop.currentTime = 0;
-        }
+        radioTracks.forEach(function (track) {
+          track.pause();
+          track.currentTime = 0;
+        });
+        radioIndex = 0;
         updateRadioButton();
       }
 
@@ -556,13 +604,7 @@
         prepareRadio();
         radioOn = true;
         updateRadioButton();
-        radioLoop.pause();
-        radioLoop.currentTime = 0;
-        radioIntro.currentTime = 0;
-        radioIntro.play().catch(function () {
-          radioOn = false;
-          updateRadioButton();
-        });
+        playRadioTrack(0);
       }
 
       function toggleRadio() {
@@ -579,6 +621,7 @@
         setAuto(!auto);
       });
       root.querySelector('[data-action="radio"]').addEventListener("click", toggleRadio);
+      root.querySelector('[data-action="radio-next"]').addEventListener("click", playNextRadioTrack);
 
       fetch(versioned(root.dataset.source, PANGEA_JSON_V))
         .then(function (response) {

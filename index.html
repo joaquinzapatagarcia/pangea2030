@@ -320,6 +320,7 @@
         <button type="button" data-action="genesis">G&Eacute;NESIS</button>
         <button type="button" data-action="next">SIGUIENTE</button>
         <button type="button" data-action="auto" aria-pressed="false">AUTO</button>
+        <button type="button" data-action="radio" aria-pressed="false">ACTIVAR EMISIÓN</button>
       </div>
       <div class="season" data-field="count">0 emisiones</div>
     </section>
@@ -340,6 +341,11 @@
 
   <script>
     (function () {
+      const PANGEA_HTML_V = 1;
+      const PANGEA_JSON_V = 1;
+      const PANGEA_AUDIO_V = 1;
+      const RADIO_VOLUME = 0.18;
+
       const root = document.querySelector(".pangea");
       const fields = {
         meta: root.querySelector('[data-field="meta"]'),
@@ -390,6 +396,13 @@
       let deckPosition = 0;
       let timer = null;
       let auto = false;
+      let radioOn = false;
+      let radioIntro = null;
+      let radioLoop = null;
+
+      function versioned(path, version) {
+        return path + (path.indexOf("?") === -1 ? "?v=" : "&v=") + version;
+      }
 
       function list() {
         return data.items;
@@ -498,13 +511,76 @@
         }
       }
 
+      function updateRadioButton() {
+        const button = root.querySelector('[data-action="radio"]');
+        button.textContent = radioOn ? "CORTAR SEÑAL" : "ACTIVAR EMISIÓN";
+        button.setAttribute("aria-pressed", String(radioOn));
+      }
+
+      function prepareRadio() {
+        if (radioIntro && radioLoop) return;
+
+        radioIntro = new Audio(versioned("pangea_radio_intro.mp3", PANGEA_AUDIO_V));
+        radioLoop = new Audio(versioned("pangea_radio_loop.mp3", PANGEA_AUDIO_V));
+
+        radioIntro.preload = "auto";
+        radioLoop.preload = "auto";
+        radioIntro.volume = RADIO_VOLUME;
+        radioLoop.volume = RADIO_VOLUME;
+        radioLoop.loop = true;
+
+        radioIntro.addEventListener("ended", function () {
+          if (!radioOn) return;
+          radioLoop.currentTime = 0;
+          radioLoop.play().catch(function () {
+            radioOn = false;
+            updateRadioButton();
+          });
+        });
+      }
+
+      function stopRadio() {
+        radioOn = false;
+        if (radioIntro) {
+          radioIntro.pause();
+          radioIntro.currentTime = 0;
+        }
+        if (radioLoop) {
+          radioLoop.pause();
+          radioLoop.currentTime = 0;
+        }
+        updateRadioButton();
+      }
+
+      function startRadio() {
+        prepareRadio();
+        radioOn = true;
+        updateRadioButton();
+        radioLoop.pause();
+        radioLoop.currentTime = 0;
+        radioIntro.currentTime = 0;
+        radioIntro.play().catch(function () {
+          radioOn = false;
+          updateRadioButton();
+        });
+      }
+
+      function toggleRadio() {
+        if (radioOn) {
+          stopRadio();
+        } else {
+          startRadio();
+        }
+      }
+
       root.querySelector('[data-action="genesis"]').addEventListener("click", showNext);
       root.querySelector('[data-action="next"]').addEventListener("click", showNext);
       root.querySelector('[data-action="auto"]').addEventListener("click", function () {
         setAuto(!auto);
       });
+      root.querySelector('[data-action="radio"]').addEventListener("click", toggleRadio);
 
-      fetch(root.dataset.source)
+      fetch(versioned(root.dataset.source, PANGEA_JSON_V))
         .then(function (response) {
           if (!response.ok) throw new Error("No JSON");
           return response.json();

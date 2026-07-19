@@ -1,0 +1,40 @@
+name: Validar PANGEA
+
+on:
+  push:
+    paths:
+      - "index.html"
+      - "pangea.json"
+      - "paralelo.jpg"
+      - "*.mp3"
+      - "scripts/**"
+      - "package.json"
+      - ".github/workflows/validate-pangea.yml"
+  pull_request:
+    paths:
+      - "index.html"
+      - "pangea.json"
+      - "paralelo.jpg"
+      - "*.mp3"
+      - "scripts/**"
+      - "package.json"
+      - ".github/workflows/validate-pangea.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Validar estructura y activos
+        run: npm run validate

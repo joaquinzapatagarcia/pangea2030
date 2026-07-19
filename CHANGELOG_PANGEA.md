@@ -2,6 +2,18 @@
 
 Registro de versiones del teletipo PANGEA 2030.
 
+## 2026-07-19 - Estructura maestra v1
+
+- La emisión pública permanece en HTML v3, JSON v1 y audio v2.
+- Se crea la Base Maestra de identidad, capas, fuentes de verdad y protocolo de actualización.
+- Se incorporan directorios para canon, material bruto, temporadas, radio y archivo.
+- Se documenta la Temporada 00 · Big Bang y la playlist activa.
+- Se añade un validador sin dependencias para JSON, imágenes, audios y constantes de versión.
+- Se añade una comprobación automática mediante GitHub Actions.
+- Se amplía el README con estado estable, arquitectura, operación y llamada Carrd.
+- No se modifican `index.html`, `pangea.json`, `paralelo.jpg` ni los audios.
+- Versión estable anterior: Radio PANGEA 2030 v3.
+
 ## 2026-07-07 - v3 Radio PANGEA 2030 Control de pista
 
 - Version HTML/Carrd: `PANGEA_HTML_V=3`
